@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 import { HEROLOGOGREEN, GOOGLELOGO, FACEBOOKLOGO } from "@/constants";
-import { styles } from "@/styles/_joinstyle";
+import { styles } from "@/styles/_join";
 
 export default function SignIn() {
   const router = useRouter();
