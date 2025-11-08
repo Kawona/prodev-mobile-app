@@ -1,14 +1,12 @@
 import React from "react";
-
 import {
-  ImageBackground,
-  View,
-  Image,
-  Text,
-  TouchableOpacity,
   SafeAreaView,
+  View,
+  Text,
+  Image,
+  ImageBackground,
+  TouchableOpacity,
 } from "react-native";
-
 import { useRouter } from "expo-router";
 import { BACKGROUNDIMAGE, HEROLOGO } from "@/constants";
 import { styles as mainStyles } from "@/styles/_mainstyle";
@@ -18,19 +16,20 @@ export default function Index() {
 
   return (
     <SafeAreaView style={mainStyles.container}>
-      <ImageBackground source={BACKGROUNDIMAGE}
+      <ImageBackground
+        source={BACKGROUNDIMAGE}
         style={mainStyles.backgroundImageContainer}
         resizeMode="cover"
       >
         <View style={mainStyles.logoContainer}>
-          <Image source={HEROLOGO}  />
+          <Image source={HEROLOGO} />
         </View>
 
         <View style={mainStyles.titleContainer}>
-          <Text style={mainStyles.titleSText}>welcome to ProDev</Text>
+          <Text style={mainStyles.titleText}>Welcome to ProDev</Text>
           <View style={mainStyles.titleSubTextContainer}>
             <Text style={mainStyles.titleSubText}>
-              Build better mobile UIs ith practical navigation patterns.
+              Learn and build real-world mobile UI layouts.
             </Text>
           </View>
         </View>
@@ -43,19 +42,16 @@ export default function Index() {
             >
               <Text style={mainStyles.buttonPrimaryText}>Create account</Text>
             </TouchableOpacity>
+
             <TouchableOpacity
-              style={mainStyles.buttoSecondary}
+              style={mainStyles.buttonSecondary}
               onPress={() => router.push("/signin")}
             >
               <Text style={mainStyles.buttonSecondaryText}>Sign in</Text>
             </TouchableOpacity>
           </View>
-
-          <View style={mainStyles.buttuonGroupSubText}>
-            <Text style={mainStyles.titleSubText}>BY continuing you agree to our Terms</Text>
-          </View>
         </View>
       </ImageBackground>
     </SafeAreaView>
-  )
+  );
 }

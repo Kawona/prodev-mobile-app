@@ -1,29 +1,32 @@
-import { styleSheet, Dimensions } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
-// constants fro reusable values
+// Constants for reusable values
+const COLORS = {
+  white: "#fff",
+};
 
 const SPACING = {
-    small: 10,
-    medium: 20,
-    large: 40,
+  small: 10,
+  medium: 20,
+  large: 40,
 };
 
 const FONT_SIZE = {
-    small: 18,
-    medium: 24,
-    large: 40,
-}
+  small: 18,
+  medium: 24,
+  large: 40,
+};
 
 const BORDER_RADIUS = {
-    large: 36,
-}
+  large: 36,
+};
 
 const { height } = Dimensions.get("window");
 
-const styles = styleSheet.create({
-    container: {
-        flex: 1,
-        height: height,
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    height: height,
   },
   logoContainer: {
     padding: SPACING.large,
@@ -36,14 +39,14 @@ const styles = styleSheet.create({
   titleText: {
     fontSize: FONT_SIZE.large,
     textAlign: "center",
-    fontWeight: 800,
+    fontWeight: "800",
     color: COLORS.white,
   },
   titleSubTextContainer: {
     marginTop: SPACING.medium,
   },
   titleSubText: {
-    fontWeight: 300,
+    fontWeight: "300",
     fontSize: FONT_SIZE.small,
     textAlign: "center",
     color: COLORS.white,
@@ -57,7 +60,7 @@ const styles = styleSheet.create({
   },
   buttonPrimaryText: {
     fontSize: FONT_SIZE.small,
-    fontWeight: 300,
+    fontWeight: "300",
     textAlign: "center",
   },
   buttonSecondary: {
@@ -70,7 +73,7 @@ const styles = styleSheet.create({
   },
   buttonSecondaryText: {
     fontSize: FONT_SIZE.small,
-    fontWeight: 300,
+    fontWeight: "300",
     textAlign: "center",
     color: COLORS.white,
   },
@@ -88,7 +91,6 @@ const styles = styleSheet.create({
     gap: SPACING.small,
     marginTop: 19,
   },
-    
-})
+});
 
 export { styles };
