@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Expo / React Native
+.expo/
+.expo-shared/
+
+# Build directories
+dist/
+build/
+
+# Logs
+*.log
+
+# Env files
+*.env
+
+# Mac system files
+.DS_Store
+
+# npm / yarn / pnpm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# VSCode settings
+.vscode/
